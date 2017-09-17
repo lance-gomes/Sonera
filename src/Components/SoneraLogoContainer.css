@@ -1,0 +1,67 @@
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes slideIn {
+  0% {top: 25px;}
+  100% {top: 0px;}
+}
+
+.soneraLogo {
+  height: inherit;
+  width: inherit;
+  background-image: url('../Resources/soneraLogo.png');
+  background-size: contain;
+  animation: fadeIn 3s;
+}
+
+.logoContainer {
+  height: 30em;
+  width: 30em;
+  position: relative;
+  animation: slideIn 1s;
+}
+
+.platformContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.youtubeLogo {
+  height: 7em;
+  width: 7em;
+  background-image: url('../Resources/youtubeLogo.png');
+  background-size: contain;
+  animation: fadeIn 1s;
+  cursor: pointer;
+}
+
+.spotifyLogo {
+  height: 7em;
+  width: 7em;
+  background-image: url('../Resources/spotifyLogo.png');
+  background-size: contain;
+  animation: fadeIn 1s;
+  cursor: pointer;
+}
+
+.youtubeLogoHidden {
+  height: 7em;
+  width: 7em;
+  background-image: url('../Resources/youtubeLogo.png');
+  background-size: contain;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.spotifyLogoHidden {
+  height: 7em;
+  width: 7em;
+  background-image: url('../Resources/spotifyLogo.png');
+  background-size: contain;
+  cursor: pointer;
+  opacity: 0;
+}

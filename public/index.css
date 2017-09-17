@@ -1,0 +1,17 @@
+html, body   {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+#app {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+ html {
+  background: linear-gradient(to bottom right, rgba(41, 58, 74, 0.97), rgba(127, 140, 141,1.0));
+}

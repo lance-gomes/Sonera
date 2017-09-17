@@ -1,0 +1,35 @@
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.wrapper {
+  display: flex;
+}
+
+.mainContentContainer {
+  display: flex;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.mainTextContainer {
+  font-size: 48px;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+
+.mainTextContainerBefore {
+  font-size: 48px;
+  display: none;
+}
+
+.textSection {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: white;
+}

@@ -1,0 +1,49 @@
+.playListContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainTextContainer {
+  font-size: 48px;
+}
+
+.spinnerContainer {
+  padding-right: 18em;
+  position: relative;
+  top: 5em;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  animation: fadeIn 5s;
+}
+
+.loadingText {
+  padding-right: 9em;
+  position: relative;
+  top: 3em;
+  font-size: 30px;
+}
+
+.fadeInAndOut {
+  animation: sinusodialFade 2.5s;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 0.7; }
+}
+
+.loading {
+    border: 16px solid rgba(160, 176, 177, 1);
+    border-top: 16px solid rgba(41, 58, 74, 0.97);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+}
