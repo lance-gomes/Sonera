@@ -1,27 +1,21 @@
 import React, {Component} from 'react';
 import SoneraLogo from './SoneraLogo.js';
 import Spinner from './Spinner.js';
-import './PlaylistContainer.css';
+import './MessageContainer.css';
 
-
-class PlaylistContainer extends Component {
+class MessageContainer extends Component {
 
   constructor() {
     super();
     this.state = {
       loading: true
     };
-
   }
 
   componentWillMount() {
-    if(this.props.api) {
-      var status;
-      fetch('/recommendations').then((response)=>response.json()).then((responseJson) => {
-       status = responseJson;
+      fetch('/recommendations').then(() => {
        this.setState({loading: false});
      });
-    }
   }
 
   render() {
@@ -35,4 +29,4 @@ class PlaylistContainer extends Component {
     );
   }
 }
-export default PlaylistContainer;
+export default MessageContainer;

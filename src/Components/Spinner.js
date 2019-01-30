@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import GenericText from './GenericText';
-import './PlaylistContainer.css'
+import './MessageContainer.css'
 
 class Spinner extends Component {
 
@@ -25,8 +25,6 @@ class Spinner extends Component {
        </div>
     );
   }
-
-
 }
 
 export default Spinner;

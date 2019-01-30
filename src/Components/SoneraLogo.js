@@ -3,16 +3,6 @@ import './SoneraLogoContainer.css';
 
 class SoneraLogo extends Component {
 
-  constructor() {
-    super();
-    this.state = {
-
-    };
-  }
-
-  componentWillMount() {
-  }
-
   render() {
     return (
       <div className = "logoContainer">
